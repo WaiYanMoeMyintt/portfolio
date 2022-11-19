@@ -21,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-primary);
     height: 130vh;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 main {
     position: relative;
