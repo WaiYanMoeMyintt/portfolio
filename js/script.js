@@ -47,8 +47,8 @@ menu.addEventListener('click',(m)=>{
 ScrollReveal().reveal('main', {delay:700, duration:1000, interval:4});
 ScrollReveal().reveal('nav',{delay:500, duration:1200, scale:1.5, interval:4 ,origin:"bottom"});
 
-ScrollReveal().reveal('.profile-info-left', {delay:600,duration:1000,origin:"left",interval:5,easing:"ease"});
-ScrollReveal().reveal('.profile-info-right', {delay:600,duration:1000,origin:"right",interval:5,easing:"ease" });
+ScrollReveal().reveal('.profile-info-left', {delay:800,duration:1000,origin:"left",interval:5,easing:"ease"});
+ScrollReveal().reveal('.profile-info-right', {delay:800,duration:1000,origin:"right",interval:5,easing:"ease" });
 
 ScrollReveal().reveal('.info-section-left', {delay:600,duration:1500,interval:2,origin:"left",easing:"ease"});
 ScrollReveal().reveal('.info-section-right', {delay:600,duration:1500,interval:2,origin:"left",easing:"ease" });
