@@ -1,0 +1,1467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --hue-color: 250;
+    --bg-primary:#191627;
+    --secondary-primary-color:#6E57E0;
+    --third-primary-color:#100E1B;
+    --primary-font-color:#F2F1F3;
+    --secondary-font-color:#aeafaf;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-primary);
+    height: 130vh;
+    overflow-x: hidden;
+}
+main {
+    position: relative;
+}
+main nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-primary);
+    box-shadow: 0px 1px 3px 0px rgba(46, 46, 46, 0.75);
+    z-index: 999;
+}
+main nav .profile-title h3 {
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary-font-color);
+}
+main nav .profile-title h3:hover{
+    color: var(--secondary-primary-color);
+}
+main nav .profile-links ul{
+   display: flex;
+   gap:2rem;
+}
+main nav .profile-links ul li a {
+    display: block;
+    user-select: none;
+    color: var(--primary-font-color);
+    font-weight: 500;
+}
+.profile-links ul li a:hover{
+     color: var(--secondary-primary-color);
+}
+
+main .mobile-nav {
+    margin-top: 5rem;
+    display: flex;
+    justify-content:center;
+    padding: 1rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-primary);
+    box-shadow: 0px 1px 3px 0px rgba(46, 46, 46, 0.75);
+    z-index: 999;
+    display: none;
+}
+
+main .mobile-nav .profile-links ul{
+    display: flex;
+    gap:2rem;
+ }
+ main .mobile-nav .profile-links ul li a {
+     display: block;
+     user-select: none;
+     color: var(--primary-font-color);
+     font-weight: 500;
+     font-size: .9rem;
+ }
+ main .mobile-nav .profile-links ul li a:hover{
+      color: var(--secondary-primary-color);
+ }
+/* nav section end  */
+
+/* header section start  */
+
+header {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+}
+header .profile-info-left h1 {
+    color: var(--primary-font-color);
+    line-height: 4.5rem;
+    font-size: 3rem;
+}
+
+header .profile-info-left h3 {
+    color:var(--primary-font-color);
+    padding-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+header .profile-info-left p {
+    color: var(--secondary-font-color);
+    line-height: 2.2rem;
+}
+header .profile-info-left a{
+    display:inline-block;
+    color: var(--primary-font-color);
+    background-color: var(--secondary-primary-color);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+header .profile-info-left a:hover{
+    background-color: #4f2ef1;
+}
+header .profile-info-left a i {
+    margin-left: .5rem;
+}
+header .profile-info-right img {
+    display: block;
+    max-width: 35rem;
+    height: 35rem;
+    pointer-events: none;
+}
+/* header section end  */
+.scroll-down {
+    display: flex;
+    justify-content: center;
+    gap:.5rem;
+    margin-top: -3rem;
+    animation: scroll 3s ease 1s infinite;
+    cursor: pointer;
+}
+.scroll-down:hover{
+    animation-play-state: paused;
+}
+.scroll-down i, .scroll-down p {
+    color: var(--secondary-font-color);
+}
+@keyframes scroll {
+     0%{
+        transform: translateY(0);
+     }
+     50%{
+        transform: translateY(.7rem);
+     }
+     100%{
+        transform: translateY(1rem);
+     }
+}
+/* section start  */
+section{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    padding:0 2rem;
+}
+section .info-section-left h3 {
+    color: var(--primary-font-color);
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+section .info-section-left p {
+    color:#aeafaf;
+    line-height: 2.2rem;
+    margin-top: .5rem;
+}
+section .info-section-left a{
+   display: block;
+   color:#aeafaf;
+   margin-top: 2rem;
+   font-size: .9rem;
+   text-decoration: underline;
+   user-select: none;
+}
+section .info-section-left a:hover{
+    color: var(--secondary-primary-color);
+}
+
+section .info-section-right img{
+    display: block;
+    max-width: 35rem;
+    height: 30rem;
+    border: 15px solid #232035;
+    border-radius: .4rem;
+}
+section .info-section-right img:hover{
+    opacity: 0.8;
+}
+
+/* skill section start  */
+.skill-section {
+    padding:0 2rem;
+    margin-top: 8rem;
+}
+.skill-section  h3 {
+    color: var(--primary-font-color);
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.skill-section .skill-control{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.skill-section .skill-control div img {
+    max-width: 5rem;
+    height: 5rem;
+}
+.skill-section .skill-control div  p {
+    color: var(--primary-font-color);
+    text-align: center;
+    margin: .5rem 0;
+}
+
+
+/* project section start  */
+.project-section{
+    margin-top: 4rem;
+    padding: 0rem 2rem;
+}
+.project-section h3 {
+    color: var(--primary-font-color);
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.project-section .control-project {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.project-section .control-project .sub-project-1,
+.project-section .control-project .sub-project-2
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-section .control-project .sub-project-1 .chillflix .poster img,
+.project-section .control-project .sub-project-1 .bank .poster img,
+
+.project-section .control-project .sub-project-2 .shortern .poster img,
+.project-section .control-project .sub-project-2 .modern .poster img
+
+{
+    display: block;
+    border: 5px solid #232035;
+    max-width: 38rem;
+    height: 20rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.project-section .control-project .sub-project-1 .chillflix .poster img:hover,
+.project-section .control-project .sub-project-1 .bank .poster img:hover,
+
+.project-section .control-project .sub-project-2 .shortern .poster img:hover,
+.project-section .control-project .sub-project-2 .modern .poster img:hover
+{
+    opacity: 0.8;
+}
+.project-section .control-project .sub-project-1 .chillflix .title h3,
+.project-section .control-project .sub-project-1 .bank .title h3,
+
+.project-section .control-project .sub-project-2 .shortern .title h3,
+.project-section .control-project .sub-project-2 .modern .title h3
+{
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    font-weight: 500;
+}
+.project-section .control-project .sub-project-1 .chillflix .description p,
+.project-section .control-project .sub-project-1 .bank .description p ,
+
+.project-section .control-project .sub-project-2 .shortern .description p,
+.project-section .control-project .sub-project-2 .modern .description p 
+{
+    color:#aeafaf;
+    line-height: 2.2rem;
+    margin-top: .5rem;
+    font-size: .9rem;
+    padding-bottom: .5rem;
+}
+.project-section .control-project .sub-project-1 .chillflix .view-link,
+.project-section .control-project .sub-project-1 .easy .view-link,
+
+.project-section .control-project .sub-project-2 .shortern .view-link
+
+{
+    display: flex;
+    gap:1.5rem;
+    padding:1rem 0;
+}
+.project-section .control-project .sub-project-1 .chillflix .view-link .github p
+{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-1 .chillflix .view-link .github i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+.project-section .control-project .sub-project-1 .chillflix .view-link .link p {
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-1 .chillflix .view-link .link i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+
+.project-section .control-project .sub-project-1 .bank .view-link{
+    display: flex;
+    gap:1.5rem;
+    padding:1rem 0;
+}
+
+.project-section .control-project .sub-project-1 .bank .view-link .github p{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-1 .bank .view-link .github i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+.project-section .control-project .sub-project-1 .bank .view-link .link p{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-1 .bank .view-link .link i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+
+
+.project-section .control-project .sub-project-2 .shortern .view-link{
+    display: flex;
+    gap:1.5rem;
+    padding:1rem 0;
+}
+
+.project-section .control-project .sub-project-2 .shortern .view-link .github p{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-2 .shortern .view-link .github i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+.project-section .control-project .sub-project-2 .shortern .view-link .link p{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-2 .shortern .view-link .link i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+
+
+
+.project-section .control-project .sub-project-2 .modern .view-link{
+    display: flex;
+    gap:1.5rem;
+    padding:1rem 0;
+}
+
+.project-section .control-project .sub-project-2 .modern .view-link .github p{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-2 .modern .view-link .github i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+.project-section .control-project .sub-project-2 .modern .view-link .link p{
+    color:var(--primary-font-color);
+    font-size: 0.9rem;
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-section .control-project .sub-project-2 .modern .view-link .link i {
+    color: var(--primary-font-color);
+    margin-left: 0.5rem;
+}
+
+/* services section start  */
+.services-section{
+    margin-top: 4rem;
+    padding: 0rem 2rem;
+}
+.services-section h3 {
+    color: var(--primary-font-color);
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.services-section .control-services {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.control-services .service-1,
+.control-services .service-2,
+.control-services .service-3
+{
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+.control-services .service-1 .icon,
+.control-services .service-2 .icon,
+.control-services .service-3 .icon
+{
+    background-color: var(--secondary-primary-color);
+    padding-bottom: 1rem 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-services .service-1 .icon  i,
+.control-services .service-2 .icon  i,
+.control-services .service-3 .icon  i
+{
+    color:var(--primary-font-color);
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+.control-services .service-1 h4,
+.control-services .service-2 h4,
+.control-services .service-3 h4
+{
+    color: var(--primary-font-color);
+    font-weight: 500;
+    margin: .5rem 0;
+}
+.control-services .service-1 p,
+.control-services .service-2 p,
+.control-services .service-3 p 
+{
+    color: var(--primary-font-color);
+    line-height: 2rem;
+    font-size: .9rem;
+}
+/* footer section :start */
+
+footer {
+    padding: 0rem 2rem;
+    margin: 5rem 0;
+}
+footer h3 {
+    color: var(--primary-font-color);
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+footer .footer-control {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    /* align-items: center; */
+}
+footer .footer-control form{
+    display:block;
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width:25rem;
+    height: 28rem;
+    flex-grow: 1;
+    padding: 1rem 1.5rem;
+    border-radius: .4rem;
+}
+footer .footer-control form input {
+    display: block;
+    margin: 1.5rem 0;
+    width: 22rem;
+    height: 3rem;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-left: .5rem;
+    color: var(--primary-font-color);
+    border-radius: .4rem;
+    border: 1px solid var(--secondary-primary-color);
+}
+form input::placeholder{
+    color: var(--primary-font-color);
+}
+footer .footer-control form textarea {
+    display: block;
+    width: 22rem;
+    height: 8rem;
+    margin: 1.5rem 0;
+    background-color: transparent;
+    color: var(--primary-font-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-left: .5rem;
+    outline: none;
+    border: 1px solid var(--secondary-primary-color);
+    border-radius: .4rem;
+}
+footer .footer-control form textarea::placeholder{
+    color: var(--primary-font-color);
+}
+
+footer .footer-control button {
+    display: inline-block;
+    border: 2px solid var(--secondary-primary-color);
+    background-color: transparent;
+    margin-top: 1.5rem;
+    color: var(--primary-font-color);
+    padding: .8rem 2rem;
+    width: 100%;
+    outline: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+footer .footer-control .social {
+    display: flex;
+    gap:2rem;
+    margin-top: 2rem;
+}
+footer .footer-control .social .facebook,
+footer .footer-control .social .github,
+footer .footer-control .social .telegram,
+footer .footer-control .social .twitter
+{
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+    height: 10rem;
+}
+footer .footer-control .social .facebook:hover,
+footer .footer-control .social .telegram:hover,
+footer .footer-control .social .github:hover,
+footer .footer-control .social .twitter:hover
+
+{
+    transform: scale(1.03);
+}
+
+footer .footer-control .social .facebook .icon,
+footer .footer-control .social .github .icon,
+footer .footer-control .social .telegram .icon,
+footer .footer-control .social .twitter .icon
+{
+    background-color: var(--secondary-primary-color);
+    padding-bottom: 1rem 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+footer .footer-control .social .facebook .icon i,
+footer .footer-control .social .github .icon i,
+footer .footer-control .social .telegram .icon i,
+footer .footer-control .social .twitter .icon i
+{
+    color:var(--primary-font-color);
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+footer .footer-control .social .facebook h5,
+footer .footer-control .social .github h5,
+footer .footer-control .social .telegram h5,
+footer .footer-control .social .twitter h5
+{
+    font-weight: 500;
+    color: var(--secondary-font-color);
+    padding-bottom: .5rem;
+}
+footer .footer-control .social .facebook a,
+footer .footer-control .social .github a,
+footer .footer-control .social .telegram a,
+footer .footer-control .social .twitter a
+
+{
+    color: var(--primary-font-color);
+    display: block;
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+footer .footer-contact p {
+    color: var(--primary-font-color);
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.footer-contact .contact  {
+    display: flex;
+    flex-direction: column;
+}
+ .footer-contact .contact .phone,
+ .footer-contact .contact .email
+{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.footer-contact .contact .phone i,
+.footer-contact .contact .email i 
+{
+    color: var(--primary-font-color);
+    margin-bottom: .5rem;
+}
+
+.email-noti {
+    padding: 0 2rem;
+    display: flex;  
+    justify-content:flex-start;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0rem;
+    left: 10%;
+    z-index: 999;
+    transition: all 500ms ease;
+    opacity: 0;
+}
+.email-noti.active-noti {
+    opacity: 1;
+}
+.email-noti .control-noti{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   background-color: var(--primary-font-color);
+   gap:.5rem;
+   max-width: 20rem;
+   padding: .5rem 1rem;
+   border-radius: .4rem;
+   position: fixed;
+   text-align: center;
+}
+.control-noti i {
+    color: green;
+    font-size: 1.2rem;
+}
+.control-noti p {
+    color: #000;
+    font-size: .9rem;
+}
+
+.error-noti {
+    padding: 0 2rem;
+    display: flex;  
+    justify-content:flex-start;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0rem;
+    left: 10%;
+    z-index: 999;
+    transition: all 500ms ease;
+    opacity: 0;
+}
+.error-noti.active-error{
+    opacity: 1;
+}
+.error-noti .control-error {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--primary-font-color);
+    gap:.5rem;
+    max-width: 20rem;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    position: fixed;
+    text-align: center;
+}
+.control-error i {
+    font-size: 1.2rem;
+    color: red;
+}
+.control-error p{
+    color: #000;
+    font-size: .9rem;
+}
+
+
+
+
+
+.profile-scroll {
+    padding: 0 2rem;
+    position: relative;
+}
+.profile-scroll .scroll-icon {
+    position: fixed;
+   right: 2rem;
+   bottom: 1rem;
+   cursor: pointer;
+   z-index: 9999;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 500ms ease;
+}
+.scroll-icon.active-scroll{
+    visibility: visible;
+    opacity: 1;
+}
+.scroll-icon i {
+    background-color:#38354e;
+    color: var(--primary-font-color);
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+/* menu section  */
+.menu {
+    display: none;
+}
+
+@media only screen and (max-width:360px){
+    main{
+        width: 180vw;
+    }
+    main nav {
+        padding: 1.5rem 3rem;
+    }
+    nav .profile-links ul li {
+       display: none;
+    }
+    main .mobile-nav{
+        display: flex;
+        margin-top: 3.8rem; 
+        padding: 1.5rem 0;
+        transform: scale(0);
+        transition: all 0.7s cubic-bezier(0.86,0,0.07,1);
+        opacity: 0;
+    }
+    main .mobile-nav.active-mobile{
+       opacity: 1;
+       transition: all 500ms ease;
+       transform: scale(1.05);
+    }
+    .menu {
+        display:block;
+    }
+    main header {
+        transform: translateY(3rem);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    header .profile-info-left h1{
+        padding-bottom: 1rem;
+    }
+    header .profile-info-right img {
+        display: block;
+        max-width: 25rem;
+        height: 25rem;
+        pointer-events: none;
+    }
+    main .scroll-down{
+        margin-top: 4rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+    .skill-section .skill-control{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2{
+        display: flex;
+        gap: 2rem;
+    }
+    .services-section .control-services{
+        display: flex;
+        flex-direction: column;
+        align-items: cen;
+    }
+    .control-services .service-1,
+    .control-services .service-2,
+    .control-services .service-3
+    {
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    height: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+   }
+
+    footer .footer-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+     footer .footer-control .social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+ 
+
+}
+@media only screen and (max-width:375px){
+    main{
+        width: 180vw;
+    }
+    main nav {
+        padding: 1.5rem 3rem;
+    }
+    nav .profile-links ul li {
+       display: none;
+    }
+    main .mobile-nav{
+        display: flex;
+        margin-top: 3.8rem; 
+        padding: 1.5rem 0;
+        transform: scale(0);
+        transition: all 0.7s cubic-bezier(0.86,0,0.07,1);
+        opacity: 0;
+    }
+    main .mobile-nav.active-mobile{
+       opacity: 1;
+       transition: all 500ms ease;
+       transform: scale(1.05);
+    }
+    .menu {
+        display:block;
+    }
+    main header {
+        transform: translateY(3rem);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    header .profile-info-left h1{
+        padding-bottom: 1rem;
+    }
+    header .profile-info-right img {
+        display: block;
+        max-width: 25rem;
+        height: 25rem;
+        pointer-events: none;
+    }
+    main .scroll-down{
+        margin-top: 4rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+    .skill-section .skill-control{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .services-section .control-services{
+        display: flex;
+        flex-direction: column;
+        align-items: cen;
+    }
+    .control-services .service-1,
+    .control-services .service-2,
+    .control-services .service-3
+    {
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    height: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+   }
+
+    footer .footer-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+     footer .footer-control .social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+ 
+
+}
+@media only screen and (max-width:480px){
+    main{
+        width: 180vw;
+    }
+    main nav {
+        padding: 1.5rem 3rem;
+    }
+    nav .profile-links ul li {
+       display: none;
+    }
+    main .mobile-nav{
+        display: flex;
+        margin-top: 3.8rem; 
+        padding: 1.5rem 0;
+        transform: scale(0);
+        transition: all 0.7s cubic-bezier(0.86,0,0.07,1);
+        opacity: 0;
+    }
+    main .mobile-nav.active-mobile{
+       opacity: 1;
+       transition: all 500ms ease;
+       transform: scale(1.05);
+    }
+    .menu {
+        display:block;
+    }
+    main header {
+        transform: translateY(3rem);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    header .profile-info-left h1{
+        padding-bottom: 1rem;
+    }
+    header .profile-info-right img {
+        display: block;
+        max-width: 25rem;
+        height: 25rem;
+        pointer-events: none;
+    }
+    main .scroll-down{
+        margin-top: 4rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+    .skill-section .skill-control{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap:3rem;
+    }
+    
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .services-section .control-services{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    footer .footer-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+     footer .footer-control .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+ 
+
+}
+@media only screen and (max-width:640px){
+    main{
+        /* width: 180vw; */
+    }
+    main nav {
+        padding: 1.5rem 3rem;
+    }
+    nav .profile-links ul li {
+       display: none;
+    }
+    main .mobile-nav{
+        display: flex;
+        margin-top: 3.8rem; 
+        padding: 1.5rem 0;
+        transform: scale(0);
+        transition: all 0.7s cubic-bezier(0.86,0,0.07,1);
+        opacity: 0;
+    }
+    main .mobile-nav.active-mobile{
+       opacity: 1;
+       transition: all 500ms ease;
+       transform: scale(1.05);
+    }
+    .menu {
+        display:block;
+    }
+    main header {
+        transform: translateY(3rem);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    header .profile-info-left{
+        width: 100%;
+    }
+    header .profile-info-left h1{
+        padding-bottom: 1rem;
+    }
+    header .profile-info-right img {
+        display: block;
+        max-width: 25rem;
+        height: 25rem;
+        pointer-events: none;
+    }
+    main .scroll-down{
+        margin-top: 4rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+    .skill-section .skill-control{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap:3rem;
+    }
+    .control-services .service-1,
+    .control-services .service-2,
+    .control-services .service-3
+    {
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    height: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+   }
+    
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .services-section .control-services{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    footer .footer-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+     footer .footer-control .social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+     }
+ 
+
+}
+@media only screen and (max-width:540px){
+    main{
+        /* width: 180vw; */
+    }
+    main nav {
+        padding: 1.5rem 3rem;
+    }
+    nav .profile-links ul li {
+       display: none;
+    }
+    main .mobile-nav{
+        display: flex;
+        margin-top: 3.8rem; 
+        padding: 1.5rem 0;
+        transform: scale(0);
+        transition: all 0.7s cubic-bezier(0.86,0,0.07,1);
+        opacity: 0;
+    }
+    main .mobile-nav.active-mobile{
+       opacity: 1;
+       transition: all 500ms ease;
+       transform: scale(1.05);
+    }
+    .menu {
+        display:block;
+    }
+    main header {
+        transform: translateY(3rem);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    header .profile-info-left{
+        width: 100%;
+    }
+    header .profile-info-left h1{
+        padding-bottom: 1rem;
+    }
+    header .profile-info-right img {
+        display: block;
+        max-width: 25rem;
+        height: 25rem;
+        pointer-events: none;
+    }
+    main .scroll-down{
+        margin-top: 4rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+    .skill-section .skill-control{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap:3rem;
+    }
+    .control-services .service-1,
+    .control-services .service-2,
+    .control-services .service-3
+    {
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    height: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+   }
+    
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .project-section .control-project .sub-project-1 .chillflix .poster img,
+.project-section .control-project .sub-project-1 .bank .poster img,
+
+.project-section .control-project .sub-project-2 .shortern .poster img,
+.project-section .control-project .sub-project-2 .modern .poster img
+
+{
+    display: block;
+    border: 5px solid #232035;
+    max-width: 28rem;
+    height: 20rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+    .services-section .control-services{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    
+    .control-services .service-1,
+    .control-services .service-2,
+    .control-services .service-3
+    {
+    /* background-color:#232035; */
+    display: block;
+    margin: 1rem 0;
+    background-color: red;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    height: 20rem;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+   }
+
+    footer .footer-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+     footer .footer-control .social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+     }
+ 
+
+}
+
+@media only screen and (max-width:760px){
+    main{
+        /* width: 180vw; */
+    }
+    main nav {
+        padding: 1.5rem 3rem;
+    }
+    nav .profile-links ul li {
+       display: none;
+    }
+    main .mobile-nav{
+        display: flex;
+        margin-top: 3.8rem; 
+        padding: 1.5rem 0;
+        transform: scale(0);
+        transition: all 0.7s cubic-bezier(0.86,0,0.07,1);
+        opacity: 0;
+    }
+    main .mobile-nav.active-mobile{
+       opacity: 1;
+       transition: all 500ms ease;
+       transform: scale(1.05);
+    }
+    .menu {
+        display:block;
+    }
+    main header {
+        transform: translateY(3rem);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    header .profile-info-left{
+        width: 100%;
+    }
+    header .profile-info-left h1{
+        padding-bottom: 1rem;
+    }
+    header .profile-info-right img {
+        display: block;
+        max-width: 25rem;
+        height: 25rem;
+        pointer-events: none;
+    }
+    main .scroll-down{
+        margin-top: 4rem;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+    .skill-section .skill-control{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap:3rem;
+    }
+    .control-services .service-1,
+    .control-services .service-2,
+    .control-services .service-3
+    {
+    background-color:#232035;
+    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
+    max-width: 25rem;
+    height: 15rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+   }
+    
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .services-section .control-services{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    footer .footer-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+    }
+     footer .footer-control .social{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+     }
+ 
+
+}
+
+@media only screen and (max-width:991px){
+
+      .mobile-nav {
+        display: none;
+      }
+      .project-section .control-project .sub-project-1,
+      .project-section .control-project .sub-project-2
+      {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap:1.5rem;
+      }
+      footer .footer-control{
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+      }
+}
+@media only screen and (max-width:1024px){
+    main header {
+        display: flex;
+        gap:3rem;
+    }
+    .mobile-nav {
+      display: none;
+    }
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1.5rem;
+    }
+    footer .footer-control{
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+}
+@media only screen and (max-width:1200px){
+    main header {
+        display: flex;
+        gap:3rem;
+    }
+    .mobile-nav {
+      display: none;
+    }
+    .project-section .control-project .sub-project-1,
+    .project-section .control-project .sub-project-2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1.5rem;
+    }
+    footer .footer-control{
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+}
