@@ -841,6 +841,8 @@ footer .footer-contact p {
     }
     .skill-control {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         gap:2rem;
     }
@@ -958,6 +960,9 @@ footer .footer-control form textarea {
        display: flex;
        flex-wrap: wrap;
        gap:2rem;
+   }
+   .project-section {
+    padding: 0 3rem;
    }
 .project-section .control-project .sub-project-1 .chillflix .poster img,
 .project-section .control-project .sub-project-1 .bank .poster img,
