@@ -1003,7 +1003,6 @@ footer .footer-control form input {
    height: 8rem;
  }
 }
-
 @media only screen and (max-width:480px){
    main nav {
       padding: 1.5rem 1rem;
@@ -1121,7 +1120,6 @@ footer .footer-control form textarea {
   height: 8rem;
 }
 }
-
 @media only screen and (max-width:768px){
    main nav {
       padding: 1.5rem 1rem;
@@ -1276,13 +1274,19 @@ footer .footer-control form textarea {
   height: 8rem;
 }
 }
-
-
-
 @media only screen and (max-width:991px){
 
       .mobile-nav {
         display: none;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      section {
+
+        display: flex;
+        justify-content: space-between;
       }
       .project-section .control-project .sub-project-1,
       .project-section .control-project .sub-project-2
@@ -1298,7 +1302,6 @@ footer .footer-control form textarea {
         padding: 1rem 0;
       }
 }
-
 @media only screen and (max-width:1024px){
     main header {
         display: flex;
@@ -1307,6 +1310,15 @@ footer .footer-control form textarea {
     .mobile-nav {
       display: none;
     }
+    header {
+        display: flex;
+        justify-content: space-between;
+      }
+      section {
+
+        display: flex;
+        justify-content: space-between;
+      }
     .project-section .control-project .sub-project-1,
     .project-section .control-project .sub-project-2
     {
@@ -1321,7 +1333,6 @@ footer .footer-control form textarea {
       padding: 1rem 0;
     }
 }
-
 @media only screen and (max-width:1200px){
     main header {
         display: flex;
@@ -1330,6 +1341,15 @@ footer .footer-control form textarea {
     .mobile-nav {
       display: none;
     }
+    header {
+        display: flex;
+        justify-content: space-between;
+      }
+      section {
+
+        display: flex;
+        justify-content: space-between;
+      }
     .project-section .control-project .sub-project-1,
     .project-section .control-project .sub-project-2
     {
