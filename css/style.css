@@ -856,6 +856,7 @@ footer .footer-contact p {
 footer .social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 footer .footer-control form{
   display:block;
@@ -971,6 +972,7 @@ footer .footer-control form textarea {
 footer .social {
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
 }
 footer .footer-control form{
    display:block;
@@ -1085,6 +1087,7 @@ footer .footer-control form input {
 
 footer .social {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 footer .footer-control form{
@@ -1217,15 +1220,11 @@ footer .footer-control form textarea {
 }
 .services-section .control-services {
    margin-top: 2rem;
-   display: grid;
-   grid-template-columns: 3fr 3fr 3fr;
-   justify-content: center;
-   align-items: center;
-   /* display: flex;
+   display: flex;
    align-items: center;
    gap: 1rem;
    flex-wrap: wrap;
-   justify-content:center; */
+   justify-content:center;
 }
 .control-services .service-1,
 .control-services .service-2,
@@ -1234,7 +1233,7 @@ footer .footer-control form textarea {
    background-color:#232035;
    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
    max-width: 25rem;
-   height: 18rem;
+   height: 16rem;
    padding: 1rem 1rem;
    border-radius: 1rem;
 }
@@ -1242,6 +1241,7 @@ footer .footer-control form textarea {
 footer .social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 footer .footer-control form{
   display:block;
