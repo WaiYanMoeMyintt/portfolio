@@ -1275,18 +1275,26 @@ footer .footer-control form textarea {
 }
 }
 @media only screen and (max-width:991px){
-
       .mobile-nav {
         display: none;
       }
       header {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      header .profile-info-left {
+         width: 100%;
       }
       section {
-
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      section .info-section-left {
+        width: 100%;
       }
       .project-section .control-project .sub-project-1,
       .project-section .control-project .sub-project-2
