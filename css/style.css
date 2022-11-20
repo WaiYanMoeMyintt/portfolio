@@ -1159,7 +1159,11 @@ footer .footer-control form textarea {
   header {
       display: flex;
       flex-wrap: wrap-reverse;
+      justify-content: center;
       transform: translateY(3rem);
+  }
+  header .profile-info-left {
+    text-align: center;
   }
   header .profile-info-right img {
       display: block;
@@ -1172,7 +1176,15 @@ footer .footer-control form textarea {
   }
   section {
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
+  }
+  section .info-section-left  p {
+     padding: 0 2rem;
+  }
+  section .info-section-left h3 {
+    text-align: center;
   }
   section .info-section-right{
       margin-top: 1rem;
@@ -1189,6 +1201,11 @@ footer .footer-control form textarea {
       flex-wrap: wrap;
       gap:6rem;
   }
+  .project-section .control-project .sub-project-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .project-section .control-project .sub-project-1 .chillflix .poster img,
 .project-section .control-project .sub-project-1 .bank .poster img,
 .project-section .control-project .sub-project-2 .shortern .poster img,
@@ -1200,11 +1217,15 @@ footer .footer-control form textarea {
 }
 .services-section .control-services {
    margin-top: 2rem;
-   display: flex;
+   display: grid;
+   grid-template-columns: 3fr 3fr 3fr;
+   justify-content: center;
+   align-items: center;
+   /* display: flex;
    align-items: center;
    gap: 1rem;
    flex-wrap: wrap;
-   justify-content:center;
+   justify-content:center; */
 }
 .control-services .service-1,
 .control-services .service-2,
@@ -1213,6 +1234,7 @@ footer .footer-control form textarea {
    background-color:#232035;
    box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.75);
    max-width: 25rem;
+   height: 18rem;
    padding: 1rem 1rem;
    border-radius: 1rem;
 }
