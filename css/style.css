@@ -959,6 +959,8 @@ footer .footer-control form textarea {
    .skill-control {
        display: flex;
        flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
        gap:2rem;
    }
    .project-section {
@@ -1078,6 +1080,8 @@ footer .footer-control form input {
   .skill-control {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       gap:6rem;
   }
 .project-section .control-project .sub-project-1 .chillflix .poster img,
@@ -1208,6 +1212,8 @@ footer .footer-control form textarea {
       display: flex;
       flex-wrap: wrap;
       gap:6rem;
+      justify-content: center;
+      align-items: center;
   }
   .project-section .control-project .sub-project-1{
     display: flex;
